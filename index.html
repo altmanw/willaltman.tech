@@ -11,6 +11,7 @@
     <title>Will Altman</title>
     <link rel="stylesheet" href="css/heronav.css" />
     <link rel="stylesheet" href="css/bodystyle.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="container">
@@ -35,18 +36,19 @@
             <a href="#link2" class="btn2">About</a>
             <a href="#link3" class="btn3">Projects</a>
             <a href="#link4" class="btn4">Resume</a>
-            <anim id="nav-animation" class="start-home"></anim>
+            <anim id="nav-animation" class="start-projects"></anim>
           </nav>
         </div>
 
         <div class="mobile-nav-wrapper" id="navbarMobile" >
-          <a href="#link0">Home</a>
+          <a href="#link0" class="btn1-mobile">Home</a>
           <div id="mobileLinks" class="mobile-nav-link-wrapper" style="visibility: hidden">
 
-            <a href="#link2" >About</a>
-            <a href="#link3" >Projects</a>
-            <a href="#link4" >Resume</a>
+            <a href="#link2" class="btn2-mobile">About</a>
+            <a href="#link3" class="btn3-mobile">Projects</a>
+            <a href="#link4" class="btn4-mobile">Resume</a>
           </div>
+          <anim id="nav-animation-mobile" class="start-home"></anim>
           <a href="javascript: void(0)" class="icon" onclick="hamburger()">
             <i class="fa fa-bars"></i>
           </a>
@@ -132,12 +134,13 @@
           Will Altman &bullet; 2020 &bullet;
           <a href="#" id="link">willaltman.com</a>
         </p>
-        <h6>Development build version 0.5</h6>
+        <h6>Development build version 0.6</h6>
       </footer>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/inview.js"></script>
+  <script src="js/nav-anim.js"></script>
+  <script src="js/nav-anim-mobile.js"></script>
   <script src="js/navbar.js"></script>
   
 </html>

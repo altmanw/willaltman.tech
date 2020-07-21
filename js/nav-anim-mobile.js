@@ -1,19 +1,7 @@
 /* Adapted from https://stackoverflow.com/questions/47793841/update-navbar-when-user-scrolls */
 
-var selector = "#nav-animation";
+var selector = "#nav-animation-mobile";
 
-//Update the position of the red highlight
-$(window).scroll(function () {
-  if ($("anim").hasClass("start-home")) {
-    $(selector).css({ width: "156px", left: "0" });
-  } else if ($("anim").hasClass("start-about")) {
-    $(selector).css({ width: "148px", left: "154px" });
-  } else if ($("anim").hasClass("start-projects")) {
-    $(selector).css({ width: "178px", left: "300px" });
-  } else if ($("anim").hasClass("start-resume")) {
-    $(selector).css({ width: "190px", left: "480px" });
-  }
-});
 
 //Detect where we are in the current scroll window, and update hover effects and higlight position class
 $(window)
@@ -26,7 +14,7 @@ $(window)
 
     if (windscroll >= 0) {
       $(selector).addClass("start-home");
-      $(".btn1").addClass("btn-current");
+      $(".btn1-mobile").addClass("btn-current-mobile");
     } // do not remove this class
 
     if (windscroll >= sec2) {
@@ -36,13 +24,13 @@ $(window)
       $(selector).removeClass("start-projects");
       $(selector).removeClass("start-resume");
 
-      $(".btn2").addClass("btn-current");
-      $(".btn1").removeClass("btn-current");
-      $(".btn3").removeClass("btn-current");
-      $(".btn4").removeClass("btn-current");
+      $(".btn2-mobile").addClass("btn-current-mobile");
+      $(".btn3-mobile").removeClass("btn-current-mobile");
+      $(".btn1-mobile").removeClass("btn-current-mobile");
+      $(".btn4-mobile").removeClass("btn-current-mobile");
     } else {
       $(selector).removeClass("start-about");
-      $(".btn2").removeClass("btn-current");
+      $(".btn2-mobile").removeClass("btn-current-mobile");
     }
 
     if (windscroll >= sec3) {
@@ -52,12 +40,13 @@ $(window)
       $(selector).removeClass("start-about");
       $(selector).removeClass("start-resume");
 
-      $(".btn3").addClass("btn-current");
-      $(".btn1").removeClass("btn-current");
-      $(".btn2").removeClass("btn-current");
-      $(".btn4").removeClass("btn-current");
+      $(".btn3-mobile").addClass("btn-current-mobile");
+      $(".btn1-mobile").removeClass("btn-current-mobile");
+      $(".btn2-mobile").removeClass("btn-current-mobile");
+      $(".btn4-mobile").removeClass("btn-current-mobile");
     } else {
       $(selector).removeClass("start-projects");
+      $(".btn3-mobile").removeClass("btn-current-mobile");
     }
 
     if (windscroll >= sec4) {
@@ -67,13 +56,13 @@ $(window)
       $(selector).removeClass("start-about");
       $(selector).removeClass("start-projects");
 
-      $(".btn4").addClass("btn-current");
-      $(".btn1").removeClass("btn-current");
-      $(".btn2").removeClass("btn-current");
-      $(".btn3").removeClass("btn-current");
+      $(".btn4-mobile").addClass("btn-current-mobile");
+      $(".btn1-mobile").removeClass("btn-current-mobile");
+      $(".btn2-mobile").removeClass("btn-current-mobile");
+      $(".btn3-mobile").removeClass("btn-current-mobile");
     } else {
       $(selector).removeClass("start-resume");
-      $(".btn4").removeClass("btn-current");
+      $(".btn4-mobile").removeClass("btn-current-mobile");
     }
   })
   .scroll();
