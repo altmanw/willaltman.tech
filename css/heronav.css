@@ -25,6 +25,7 @@ html {
     height: 300px;
     width: 100%;
 
+    background-size: cover;
     background-position: center;
     background-position-y: -20px;
     background-size: 700px;
@@ -32,6 +33,10 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  
+
+  
 
   .hero-img-subtitle {
     background-color: rgb(206, 15, 61); /* Fallback color */
@@ -239,41 +244,22 @@ html {
     width: 148px;
   }
 
-  /* nav .start-home,
-a:nth-child(1):hover ~ #nav-animation {
-  width: 156px;
-  left: 0;
-}  */
 
   .nav-link-wrapper a:nth-child(2) {
     width: 148px;
   }
 
-  /* nav .start-about,
-a:nth-child(2):hover ~ #nav-animation {
-  width: 148px;
-  left: 154px;
-}  */
+
 
   .nav-link-wrapper a:nth-child(3) {
     width: 174px;
   }
 
-  /* nav .start-projects,
-a:nth-child(3):hover ~ #nav-animation {
-  width: 178px;
-  left: 300px;
-} */
 
   .nav-link-wrapper a:nth-child(4) {
     width: 180px;
   }
 
-  /* nav .start-resume,
-a:nth-child(4):hover ~ #nav-animation {
-  width: 190px;
-  left: 480px;
-} */
 
   .sticky {
     position: fixed;
@@ -284,35 +270,5 @@ a:nth-child(4):hover ~ #nav-animation {
     padding-top: 60px;
   }
 
-  .about-me-wrapper {
-    font-size: 2.2em;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 35px;
-  }
-}
 
-.mainFooter {
-  background: #222831;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  font-size: 1.25em;
-}
 
-.mainFooter a {
-  color: white;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: 0.5s;
-}
-
-.mainFooter a:hover {
-  border-bottom: 2px solid white;
-  transition: 0.5s;
-}
-
-.mainFooter h6 {
-  font-size: 0.75em;
-  font-weight: normal;
-}
