@@ -5,6 +5,7 @@ window.onscroll = function () {
   stickMobile();
 };
 
+/* TODO: Update variables based on width resizing */
 var navbar = document.getElementById("navbar");
 var navbarMobile = document.getElementById("navbarMobile");
 var sticky = navbar.offsetTop - 40;
