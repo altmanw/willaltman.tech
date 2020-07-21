@@ -1,0 +1,318 @@
+body,
+html {
+  font-family: Arial, "Lato", sans-serif;
+  margin: 0px; /* Overrides the default margin, allows the portfolio images to be right against the side of the page */
+  scroll-behavior: smooth;
+}
+
+/* https://stackoverflow.com/questions/20405387/change-navbar-css-based-on-position-on-a-single-page */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Main Banner */
+/* Hover effect adapted from https://www.youtube.com/watch?v=KwoSm0E8MOE */
+
+@media (min-width: 0px) {
+  .hero-img-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img-background {
+    height: 300px;
+    width: 100%;
+
+    background-position: center;
+    background-position-y: -20px;
+    background-size: 700px;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .hero-img-subtitle {
+    background-color: rgb(206, 15, 61); /* Fallback color */
+    background-color: rgba(206, 15, 61, 0.1); /* Scarlet and opaque */
+    color: #f1f1f1;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 40px;
+    text-align: center;
+    font-size: 0.75em;
+  }
+
+  /* Navbar */
+
+  .nav-wrapper {
+    visibility: hidden;
+  }
+
+  .mobile-nav-wrapper {
+    position: absolute;
+    background-color: #222831;
+    top: 300px;
+    width: 100%;
+    height: 60px;
+    text-align: left;
+  }
+
+  .mobile-nav-wrapper a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    background: #222831;
+  }
+
+  .icon {
+    float: right;
+    visibility: visible;
+    background-color: #ce0f3d;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 32px;
+    width: 32px;
+  }
+
+  .mobile-nav-link-wrapper #mobileLinks {
+    visibility: hidden;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    background: #222831;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  .about-me-wrapper {
+    font-size: 1.2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 45px;
+  }
+}
+
+@media (min-width: 700px) {
+  .hero-img-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img-background {
+    height: 730px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-bottom: 20px solid #222831;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-img-subtitle {
+    background-color: #ce0f3d; /* Fallback color */
+    background-color: rgba(206, 15, 61, 0.1); /* Scarlet and opaque */
+    color: #f1f1f1;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 33.333%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 40px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  /* Navbar */
+
+  .nav-wrapper {
+    position: absolute;
+    margin: 270px auto 0;
+    width: 650px;
+    height: 50px;
+    padding: 8px;
+    background-color: #222831;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    top: 480px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+  }
+
+  .mobile-nav-wrapper {
+    visibility: hidden;
+  }
+
+  .mobile-nav-wrapper a {
+    visibility: hidden;
+  }
+
+  .icon {
+    visibility: hidden;
+  }
+
+  .mobile-nav-link-wrapper #mobileLinks {
+    visibility: hidden;
+  }
+
+  .nav-link-wrapper a {
+    /* Grab the anchors inside that class */
+
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .nav-link-wrapper a {
+    /* Grab the anchors inside that class */
+
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .btn1:hover,
+  .btn2:hover,
+  .btn3:hover,
+  .btn4:hover {
+    text-decoration: underline;
+    color: red;
+    transition: 0.5s;
+  }
+
+  .btn-current:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+
+  nav #nav-animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: rgb(206, 15, 61);
+    border-radius: 8px;
+    transition: all 0.5s ease 0s;
+  }
+
+  .nav-link-wrapper a:nth-child(1) {
+    width: 148px;
+  }
+
+  /* nav .start-home,
+a:nth-child(1):hover ~ #nav-animation {
+  width: 156px;
+  left: 0;
+}  */
+
+  .nav-link-wrapper a:nth-child(2) {
+    width: 148px;
+  }
+
+  /* nav .start-about,
+a:nth-child(2):hover ~ #nav-animation {
+  width: 148px;
+  left: 154px;
+}  */
+
+  .nav-link-wrapper a:nth-child(3) {
+    width: 174px;
+  }
+
+  /* nav .start-projects,
+a:nth-child(3):hover ~ #nav-animation {
+  width: 178px;
+  left: 300px;
+} */
+
+  .nav-link-wrapper a:nth-child(4) {
+    width: 180px;
+  }
+
+  /* nav .start-resume,
+a:nth-child(4):hover ~ #nav-animation {
+  width: 190px;
+  left: 480px;
+} */
+
+  .sticky {
+    position: fixed;
+    top: -230px;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .about-me-wrapper {
+    font-size: 2.2em;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 35px;
+  }
+}
+
+.mainFooter {
+  background: #222831;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.mainFooter a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.mainFooter a:hover {
+  border-bottom: 2px solid white;
+  transition: 0.5s;
+}
+
+.mainFooter h6 {
+  font-size: 0.75em;
+  font-weight: normal;
+}
