@@ -232,6 +232,10 @@
     visibility: hidden;
   }
 
+  .mobile-nav-link-wrapper {
+    visibility: hidden;
+  }
+
   .icon {
     visibility: hidden;
   }
