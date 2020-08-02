@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-image: url(/images/UnderConstruction.jpg);
+    background-image: url("/images/UnderConstruction.jpg");
 }
 
 h1, h3, a {
