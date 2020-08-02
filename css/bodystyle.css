@@ -1,3 +1,140 @@
+body,
+html {
+  font-family: "Montserrat", Arial, "Lato", sans-serif;
+  margin: 0px; /* Overrides the default margin, allows the portfolio images to be right against the side of the page */
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: grid;
+  background: #f6f0ef;
+}
+
+.content {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+/* --- SECTIONS --- */
+
+.section1 {
+  margin: 50px 0px;
+  background-color: white;
+  display: grid;
+  padding: 20px;
+  border-radius: 16px;
+  gap: 20px;
+  /* grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr; */
+}
+
+@media only screen and (min-width: 952px) {
+  .section1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 50px 10px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .section1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 50px 50px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .section1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 50px 150px;
+  }
+}
+
+.section-1-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.section-1-image-wrapper img {
+  border-radius: 16px;
+}
+
+.section1-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.section1 h1 {
+  font-size: 100px;
+  margin: 20px 0px;
+  font-weight: 900;
+}
+
+.section1 h2 {
+  font-size: 30px;
+  margin: 20px 0px;
+  font-weight: 500;
+}
+
+.section1 h3, strong {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 300;
+}
+
+.section1 a {
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #ce0f3d;
+  transition: all ease-out 0.55s;
+
+  border-bottom: 1px solid transparent;
+}
+
+.section1 a:hover {
+  transition: all ease-in 0.55s;
+  border-bottom: 1px solid #ce0f3d;
+  
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted gray; /* If you want dots under the hoverable text */
+  margin: 0;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: gray;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+   /* Position the tooltip */
+   position: absolute;
+   z-index: 1;
+   bottom: 100%;
+   left: 50%;
+   margin-left: -150px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* --- FOOTER ---  */
+
 .mainFooter {
   background: #222831;
   color: #fff;
@@ -21,11 +158,4 @@
 .mainFooter h6 {
   font-size: 0.75em;
   font-weight: normal;
-}
-
-.about-me-wrapper {
-  font-size: 2.2em;
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-top: 35px;
 }

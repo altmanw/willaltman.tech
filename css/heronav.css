@@ -2,6 +2,7 @@
   display: felxbox;
 }
 
+
 @media (min-width: 0px) {
   .hero-img-background {
     height: 300px;
@@ -15,7 +16,7 @@
     background-position-y: -30px;
     background-size: 700px;
 
-    border-bottom: 20px solid #222831;
+    border-bottom: 20px solid #222831; 
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -54,7 +55,7 @@
     background-position-y: -40px;
     background-size: 1000px;
 
-    border-bottom: 20px solid #222831;
+     border-bottom: 20px solid #222831;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -119,6 +120,9 @@
   }
 }
 
+
+
+
 @media (min-width: 952px) {
   .hero-img-background {
     height: 730px;
@@ -160,6 +164,7 @@
 @media (min-width: 0px) {
   .nav-wrapper {
     visibility: hidden;
+    z-index: 5;
   }
 
   .mobile-nav-wrapper {
@@ -169,6 +174,7 @@
     width: 100%;
     height: 40px;
     text-align: left;
+    z-index: 5;
   }
 
   .mobile-nav-wrapper a {

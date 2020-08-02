@@ -1,6 +1,0 @@
-body,
-html {
-  font-family: Arial, "Lato", sans-serif;
-  margin: 0px; /* Overrides the default margin, allows the portfolio images to be right against the side of the page */
-  scroll-behavior: smooth;
-}

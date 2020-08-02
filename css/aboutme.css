@@ -1,0 +1,35 @@
+body,
+html {
+  font-family: "Montserrat", Arial, "Lato", sans-serif;
+  margin: 0px; /* Overrides the default margin, allows the portfolio images to be right against the side of the page */
+  scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(/images/UnderConstruction.jpg);
+}
+
+h1, h3, a {
+    color: white;
+    margin: 0;
+    transition: 1s ease-in;
+}
+
+h1 {
+    font-size: 200px;
+}
+
+h3 {
+    font-size: 100px;
+}
+
+a {
+    font-size: 50px;
+}
+
+a:hover {
+    color: #ce0f3d;
+    font-weight: 900;
+    transition: 0.4s ease-out;
+
+}
