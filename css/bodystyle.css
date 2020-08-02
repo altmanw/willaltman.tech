@@ -3,6 +3,7 @@ html {
   font-family: "Montserrat", Arial, "Lato", sans-serif;
   margin: 0px; /* Overrides the default margin, allows the portfolio images to be right against the side of the page */
   scroll-behavior: smooth;
+  overflow-x: hidden; 
 }
 
 .container {
@@ -129,9 +130,14 @@ html {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+@media(hover: hover) and (pointer: fine) {
+  .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+}
+
+
+
 
 /* --- FOOTER ---  */
 
