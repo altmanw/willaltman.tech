@@ -239,8 +239,10 @@
   }
 
   .mobile-nav-link-wrapper {
-    visibility: hidden;
+    visibility: hidden !important;
   }
+
+  
 
   .icon {
     visibility: hidden;

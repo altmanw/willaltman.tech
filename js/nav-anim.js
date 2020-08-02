@@ -19,8 +19,7 @@ $(window).scroll(function () {
 $(window)
   .scroll(function () {
     var windscroll = $(window).scrollTop();
-    var sec1 = $(".section1").offset().top - 100;
-    var sec2 = $(".section2").offset().top - 100;
+    var sec2 = $(".section1").offset().top - 200;
     var sec3 = $(".section3").offset().top - 100;
     var sec4 = $(".section4").offset().top - 100;
 
