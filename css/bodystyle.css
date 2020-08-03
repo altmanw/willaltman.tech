@@ -3,8 +3,7 @@ html {
   font-family: "Montserrat", Arial, "Lato", sans-serif;
   margin: 0px; /* Overrides the default margin, allows the portfolio images to be right against the side of the page */
   scroll-behavior: smooth;
-  overflow-x: hidden; 
-  
+  overflow-x: hidden;
 }
 
 .container {
@@ -21,14 +20,37 @@ html {
 /* ----- SECTION 1 ----- */
 
 .section1 {
-  margin: 50px 10px;
   background-color: white;
   display: grid;
-  padding: 20px;
   border-radius: 16px;
   gap: 20px;
+  padding: 15px;
   /* grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr; */
+}
+
+.section-1-image-wrapper img {
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+}
+.section1-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 460px) {
+  .section1 {
+    margin: 50px 15px;
+  }
+  .section-1-image-wrapper img {
+    width: 400px;
+    height: 600px;
+  }
 }
 
 @media only screen and (min-width: 952px) {
@@ -57,18 +79,6 @@ html {
   justify-content: center;
 }
 
-.section-1-image-wrapper img {
-  border-radius: 16px;
-}
-
-.section1-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 20px;
-}
-
 .section1 h1 {
   font-size: 100px;
   margin: 20px 0px;
@@ -81,7 +91,8 @@ html {
   font-weight: 500;
 }
 
-.section1 h3, strong {
+.section1 h3,
+strong {
   font-size: 20px;
   margin: 0px;
   font-weight: 300;
@@ -102,7 +113,6 @@ html {
 .section1 a:hover {
   transition: all linear 0.5s;
   border-bottom: 1px solid #ce0f3d;
-  
 }
 
 .tooltip {
@@ -122,40 +132,94 @@ html {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
-   /* Position the tooltip */
-   position: absolute;
-   z-index: 1;
-   bottom: 100%;
-   left: 50%;
-   margin-left: -150px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -150px;
 }
-
-/* Show the tooltip text when you mouse over the tooltip container */
-@media(hover: hover) and (pointer: fine) {
-  .tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-}
-
-
-
-
 
 /* ----- SECTION 2 ----- */
 
-
-
-
-
-
 .section2 {
-  margin: 50px 10px;
-  background-color: white;
+  margin: 0px;
   display: grid;
-  padding: 20px;
-  border-radius: 16px;
+  justify-content: center;
   gap: 20px;
+  grid-template-columns: 250px;
+  grid-template-rows: 700px 700px 700px 700px;
+  padding: 20px;
+}
+
+.section-2-project-header {
+  background: white;
+  border-radius: 16px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  align-self: center;
+  justify-self: center;
+  padding: 40px 20px 50px 20px;
+}
+
+.section-2-project-header h1 {
+  font-size: 60px;
+  margin: 20px 0px;
+  font-weight: 900;
+  padding: 10px;
+  border-bottom: 4px solid #ce0f3d;
+}
+
+.section-2-project-card {
+  background: white;
+  border-radius: 16px;
+  grid-template-columns: 250px;
+
+  grid-template-rows: 258px 442px;
+}
+
+.section-2-project-card img {
+  border-radius: 16px 16px 0px 0px;
+  border-bottom: 8px solid #222831;
+}
+
+@media only screen and (min-width: 560px) {
+  .section2 {
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 700px 700px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .section2 {
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: auto 700px;
+  }
+}
+
+/* @media only screen and (min-width: 1400px) {
+  .section2 {
+    background: blue;
+    margin: 50px 10px;
+    display: grid;
+    padding: 20px;
+    border-radius: 16px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 700px));
+  }
+
+  .section-2-project-card {
+    background: white;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 258px 1fr;
+    
+    
+  }
+
+
 }
 
 @media only screen and (min-width: 952px) {
@@ -174,17 +238,7 @@ html {
   .section2 {
     margin: 50px 150px;
   }
-}
-
-
-
-
-
-
-
-
-
-
+} */
 
 /* --- FOOTER ---  */
 
