@@ -11,10 +11,6 @@ html {
   background: #f6f0ef;
 }
 
-.content {
-  font-size: 1.8em;
-  margin: 0;
-}
 
 /* --- SECTIONS --- */
 /* ----- SECTION 1 ----- */
@@ -45,7 +41,7 @@ html {
 
 @media only screen and (min-width: 460px) {
   .section1 {
-    margin: 50px 15px;
+    margin: 50px 15px 0px 15px;
   }
   .section-1-image-wrapper img {
     width: 400px;
@@ -56,21 +52,21 @@ html {
 @media only screen and (min-width: 952px) {
   .section1 {
     grid-template-columns: 3fr 1fr;
-    margin: 50px 15px;
+    margin: 50px 15px 0px 15px;
   }
 }
 
 @media only screen and (min-width: 1250px) {
   .section1 {
     grid-template-columns: 3fr 1fr;
-    margin: 50px 50px;
+    margin: 50px 50px 0px 50px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .section1 {
     grid-template-columns: 3fr 1fr;
-    margin: 50px 150px;
+    margin: 50px 150px 0px 150px;
   }
 }
 
@@ -105,13 +101,13 @@ strong {
   text-decoration: none;
   text-transform: lowercase;
   color: #ce0f3d;
-  transition: all ease-out 0.55s;
+  transition: all ease-out 0.3s;
 
   border-bottom: 1px solid transparent;
 }
 
 .section1 a:hover {
-  transition: all linear 0.5s;
+  transition: all linear 0.3s;
   border-bottom: 1px solid #ce0f3d;
 }
 
@@ -165,6 +161,11 @@ strong {
   padding: 20px;
 }
 
+.section2 a {
+  text-decoration: none;
+  color: black;
+}
+
 .section-2-project-header {
   background: white;
   border-radius: 16px;
@@ -181,15 +182,37 @@ strong {
   font-weight: 900;
   padding: 10px;
   border-bottom: 4px solid #ce0f3d;
+  
 }
 
 .section-2-project-card {
   background: white;
   border-radius: 16px;
-  grid-template-columns: 250px;
+  display: grid;
+  grid-template-rows: 258px 100px;
+  backface-visibility: hidden;
+  
+  transition: all 0.25s ease-in-out;
 
-  grid-template-rows: 258px 442px;
+  
+  
 }
+
+.section-2-project-card:hover {
+  
+  
+  /* box-shadow: 0 2px 10px #64081e; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+
+  transform:translateY(-10px);
+
+  transition:  all 0.25s ease-in-out;
+  
+}
+
+
 
 .section-2-project-card img {
   border-radius: 16px 16px 0px 0px;
@@ -221,9 +244,23 @@ strong {
 }
 
 .section-2-project-card h1 {
-  font-size: 30px;
+  font-size: 24px;
   padding: 10px;
+  color: #ce0f3d;
+  margin: 0px;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
 }
+
+.section-2-project-card p {
+  padding: 5px;
+  font-size: 16px;
+  justify-content: end;
+  margin: 0px;
+}
+
+
 
 /* --- FOOTER ---  */
 
