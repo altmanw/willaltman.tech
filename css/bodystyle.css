@@ -100,7 +100,7 @@ html {
 }
 
 .section1 a:hover {
-  transition: all ease-in 0.55s;
+  transition: all linear 0.5s;
   border-bottom: 1px solid #ce0f3d;
   
 }
@@ -140,13 +140,48 @@ html {
 
 
 
+
+
 /* ----- SECTION 2 ----- */
 
+
+
+
+
+
 .section2 {
-  margin: 20px 20%;
-  font-size: 30px;
-  line-height: 2em;
+  margin: 50px 10px;
+  background-color: white;
+  display: grid;
+  padding: 20px;
+  border-radius: 16px;
+  gap: 20px;
 }
+
+@media only screen and (min-width: 952px) {
+  .section2 {
+    margin: 50px 15px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .section2 {
+    margin: 50px 50px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .section2 {
+    margin: 50px 150px;
+  }
+}
+
+
+
+
+
+
+
 
 
 
