@@ -4,6 +4,7 @@ html {
   margin: 0px; /* Overrides the default margin, allows the portfolio images to be right against the side of the page */
   scroll-behavior: smooth;
   overflow-x: hidden;
+  
 }
 
 .container {
@@ -21,6 +22,7 @@ html {
   border-radius: 16px;
   gap: 20px;
   padding: 15px;
+  margin: 10px 10px;
   /* grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr; */
 }

@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow: hidden;
+  height: 100%">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+
+    <!-- Style -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
@@ -19,7 +25,16 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
   <link rel="manifest" href="/favicon/site.webmanifest">
   </head>
-  <body>
+  <body style="overflow: hidden;
+  height: 100%">
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+
+
+
     <div class="container">
       <!-- Background Image -->
       <div class="hero-img-wrapper" id="link0">
@@ -87,7 +102,7 @@
         </div>
       <a class="section-2-project-card" href="#link0">
         
-        <img src="https://via.placeholder.com/250.png?text=250" alt="">
+        <img src="https://picsum.photos/250/250/?random" alt="">
         
         <h1>Full Stack Facial Recognition</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi accusantium similique eligendi minima? Soluta possimus inventore voluptatibus eveniet sit vel laboriosam autem quisquam? Nisi eveniet aspernatur quos dignissimos. In labore officia perspiciatis aut accusamus maiores, odit iusto saepe recusandae.</p>
@@ -95,21 +110,21 @@
       </a>  
       <a class="section-2-project-card" href="#link0">
         
-          <img src="https://via.placeholder.com/250.png?text=250" alt="">
+          <img src="https://picsum.photos/250/251/?random" alt="">
           
         <h1>Full Stack RSS News Feed</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, voluptatibus deleniti vel doloremque, molestias quisquam suscipit officiis sit reiciendis laboriosam minima ipsum nesciunt quibusdam eos fuga, quo ducimus alias laudantium?</p>
       </a>
       <a class="section-2-project-card" href="#link0">
         
-          <img src="https://via.placeholder.com/250.png?text=250" alt="">
+          <img src="https://picsum.photos/250/252/?random" alt="">
           
         <h1>This Website</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolore enim quibusdam facilis, ipsum, molestiae sit libero quaerat voluptate id sed alias fugiat? Ut repellendus minus quam quod quos nisi error odit eius eos, qui, quidem, odio minima perferendis magnam repudiandae eaque quo.</p>
       </a>
       <a class="section-2-project-card" href="#link0">
         
-          <img src="https://via.placeholder.com/250.png?text=250" alt="">
+          <img src="https://picsum.photos/250/253/?random" alt="">
           
         <h1>Calculator with no Integer Limit using Java Swing</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta magnam optio iusto ut odio et repellendus expedita eum libero nostrum, quas cum iure voluptates quidem?</p>
@@ -142,14 +157,17 @@
           Will Altman &bullet; 2020 &bullet;
           <a href="#" id="link">willaltman.tech</a>
         </p>
-        <h6>Development build version 0.73</h6>
+        <h6>Development build version 0.74</h6>
       </footer>
     </div>
   </body>
+  <!-- Loader  -->
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/nav-anim.js"></script>
   <script src="js/nav-anim-mobile.js"></script>
   <script src="js/navbar.js"></script>
+  <script src="js/loader.js"></script>
   
   
 </html>
