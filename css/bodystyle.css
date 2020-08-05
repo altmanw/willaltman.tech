@@ -4,14 +4,12 @@ html {
   margin: 0px; /* Overrides the default margin, allows the portfolio images to be right against the side of the page */
   scroll-behavior: smooth;
   overflow-x: hidden;
-  
 }
 
 .container {
   display: grid;
   background: #f6f0ef;
 }
-
 
 /* --- SECTIONS --- */
 /* ----- SECTION 1 ----- */
@@ -116,8 +114,9 @@ strong {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted gray; 
+  border-bottom: 1px dotted gray;
   margin: 0;
+  cursor: default;
 }
 
 /* Tooltip text */
@@ -141,7 +140,6 @@ strong {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-
 }
 
 @media only screen and (max-width: 650px) {
@@ -184,7 +182,6 @@ strong {
   font-weight: 900;
   padding: 10px;
   border-bottom: 4px solid #ce0f3d;
-  
 }
 
 .section-2-project-card {
@@ -193,28 +190,18 @@ strong {
   display: grid;
   grid-template-rows: 258px 100px;
   backface-visibility: hidden;
-  
-  transition: all 0.25s ease-in-out;
 
-  
-  
+  transition: all 0.25s ease-in-out;
 }
 
 .section-2-project-card:hover {
-  
-  
   /* box-shadow: 0 2px 10px #64081e; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-  
 
-  transform:translateY(-10px);
+  transform: translateY(-10px);
 
-  transition:  all 0.25s ease-in-out;
-  
+  transition: all 0.25s ease-in-out;
 }
-
-
 
 .section-2-project-card img {
   border-radius: 16px 16px 0px 0px;
@@ -229,7 +216,7 @@ strong {
 
   .section-2-project-header {
     grid-column-start: 1;
-  grid-column-end: 3;
+    grid-column-end: 3;
   }
 }
 
@@ -241,7 +228,7 @@ strong {
 
   .section-2-project-header {
     grid-column-start: 1;
-  grid-column-end: 5;
+    grid-column-end: 5;
   }
 }
 
@@ -261,6 +248,219 @@ strong {
   justify-content: end;
   margin: 0px;
 }
+
+
+/* --- SECTION 3 --- */
+
+.section3 {
+  display: grid;
+  background: white;
+  border-radius: 16px;
+  margin: 20px 10px 70px 10px;
+  padding: 0;
+  gap:20px;
+
+}
+
+.head2 {
+  margin-top: 25px;
+}
+
+.input-field input, textarea {
+  border: 2px solid grey;
+  border-radius: 4px;
+  width: 250px;
+  font-family: "Montserrat", Arial, "Lato", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  
+
+}
+
+@media only screen and (min-width: 460px) {
+
+
+  .section3 {
+    margin: 20px 50px 70px 50px;
+  }
+
+  
+}
+
+
+@media only screen and (min-width: 560px) {
+  .input-field input, textarea {
+
+    width: 350px;
+
+  
+  }
+}
+
+
+@media only screen and (min-width: 952px) {
+
+
+  .section3 {
+    margin: 20px 170px 70px 170px;
+  }
+
+}
+
+
+
+
+@media only screen and (min-width: 1250px) {
+.section3 {
+  display: grid;
+  justify-content: center;
+
+  background: white;
+  border-radius: 16px;
+  grid-template-columns: 400px 400px;
+  padding: 20px;
+  margin: 20px 200px 70px 200px;
+
+  gap: 50px;
+
+  }
+
+  .head2 {
+    order: -1;
+    margin-top: 0px;
+    
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+.section3 {
+
+  margin: 20px 330px 70px 330px;
+
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+.section3 {
+
+  margin: 20px 460px 70px 460px;
+
+  }
+
+
+}
+
+.section-3-contact-header {
+  justify-self: center;
+ 
+}
+
+.section-3-contact-header h1 {
+  border-bottom: 2px solid #ce0f3d;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 8px;
+  align-items: center;
+  
+
+}
+
+.input-field h4{
+  color: #ce0f3d;
+  margin-bottom: 5px;
+}
+
+
+
+.input-field textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.form-wrapper button {
+  font-family: "Montserrat", Arial, "Lato", sans-serif;
+  background-color: #ce0f3d; 
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 8px;
+  cursor: pointer;
+
+}
+
+.form-wrapper button:hover {
+  background-color: #af1035;
+  transform: translateY(1px);
+
+}
+
+.social-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  
+}
+
+
+.social-wrapper a {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 10px;
+  width: 300px;
+  justify-content: center;
+}
+
+.social-wrapper i {
+  justify-self: flex-end;
+  align-self: center;
+  padding-right: 50px;
+}
+
+.a-email, .a-github, .a-linkedIn, .a-handshake, .a-instagram {
+  background: linear-gradient(to right, #ce0f3d, rgb(226, 114, 40));
+}
+
+.a-email:hover, .a-github:hover, .a-linkedIn:hover, .a-handshake:hover, .a-instagram:hover {
+  
+  background: linear-gradient(to left, #ce0f3d, red);
+  transform: translateY(1px);
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

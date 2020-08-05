@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow: hidden;
-  height: 100%">
-  <head>
+<html lang="en"
+    style="overflow: hidden;
+                                                                                                                                                                                          height: 100%">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
 
     <!-- Style -->
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Will Altman</title>
@@ -21,156 +19,200 @@
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
-  </head>
-  <body style="overflow: hidden;
-  height: 100%">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+</head>
+
+<body style="overflow: hidden; height: 100%">
 
     <div class="loader-wrapper">
-      <div class="spinner">
-        <div class="cube1"></div>
-        <div class="cube2"></div>
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
     </div>
-  </div>
-
-
 
 
     <div class="container">
-      <!-- Background Image -->
-      <div class="hero-img-wrapper" id="link0">
-        <div
-          class="hero-img-background"
-          style="background-image: url(images/Script.jpg);"
-        ></div>
+        <!-- Background Image -->
+        <div class="hero-img-wrapper" id="link0">
+            <div class="hero-img-background" style="background-image: url(images/Script.jpg);"></div>
 
-        <div class="hero-img-subtitle">
-          <h1>Will Altman</h1>
-          <p>Programmer | Musician | Film Enthusiast </p>
+            <div class="hero-img-subtitle">
+                <h1>Will Altman</h1>
+                <p>Programmer | Musician | Film Enthusiast
+                </p>
+            </div>
+
+            <!-- Navbar -->
+
+
+            <div class="nav-wrapper" id="navbar">
+                <nav class="nav-link-wrapper">
+                    <a href="#link0" class="btn1">Home</a>
+                    <a href="#link2" class="btn2">About</a>
+                    <a href="#link3" class="btn3">Projects</a>
+                    <a href="#link4" class="btn4">Contact</a>
+                    <anim id="nav-animation" class="start-projects"></anim>
+                </nav>
+            </div>
+
+            <div class="mobile-nav-wrapper" id="navbarMobile">
+                <a href="#link0" class="btn1-mobile">Home</a>
+                <div id="mobileLinks" class="mobile-nav-link-wrapper" style="visibility: hidden">
+
+                    <a href="#link2" class="btn2-mobile">About</a>
+                    <a href="#link3" class="btn3-mobile">Projects</a>
+                    <a href="#link4" class="btn4-mobile">Resume</a>
+                </div>
+                <anim id="nav-animation-mobile" class="start-home"></anim>
+                <a href="javascript: void(0)" class="icon" onclick="hamburger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </div>
 
-        <!-- Navbar -->
 
+        <!-- POKER!!!!  -->
 
-        <div class="nav-wrapper" id="navbar" >
-          <nav class="nav-link-wrapper">
-            <a href="#link0" class="btn1">Home</a>
-            <a href="#link2" class="btn2">About</a>
-            <a href="#link3" class="btn3">Projects</a>
-            <a href="#link4" class="btn4">Contact</a>
-            <anim id="nav-animation" class="start-projects"></anim>
-          </nav>
-        </div>
-
-        <div class="mobile-nav-wrapper" id="navbarMobile" >
-          <a href="#link0" class="btn1-mobile">Home</a>
-          <div id="mobileLinks" class="mobile-nav-link-wrapper" style="visibility: hidden">
-
-            <a href="#link2" class="btn2-mobile">About</a>
-            <a href="#link3" class="btn3-mobile">Projects</a>
-            <a href="#link4" class="btn4-mobile">Resume</a>
-          </div>
-          <anim id="nav-animation-mobile" class="start-home"></anim>
-          <a href="javascript: void(0)" class="icon" onclick="hamburger()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </div>
-
-         
-
-      
-        
         <div class="section1" id="link2">
-        
-          <div class="section1-text-wrapper">
-          <h1>Hello!</h1>
-          <h2>My name is Will Altman, and I am a second year Computer Science and Engineering student at The Ohio State University.</h2>
-          <h3>I am an active trumpet player in <strong class="tooltip">TBDBITL<span class="tooltiptext">The Ohio State University Marching Band, also known as The Best Damn Band In The Land</span></strong> and several other campus ensembles, and in my free time I enjoy writing about movie scenes I find interesting. </h3>
-          <a href="/about.html">Find out more about me</a>
-          </div>
-        
-        <div class="section-1-image-wrapper">
-          <img src="https://via.placeholder.com/400x600.png?text=Image+Of+Me" alt="Image of me" class="img-of-me">
+
+            <div class="section1-text-wrapper">
+                <h1>Hello!</h1>
+                <h2>My name is Will Altman, and I am a second year Computer Science and Engineering student at The Ohio
+                    State University.</h2>
+                <h3>I am an active trumpet player in
+                    <strong class="tooltip">TBDBITL<span class="tooltiptext">The Ohio State University Marching Band,
+                            also known as The Best Damn Band In The Land</span>
+                    </strong>
+                    and several other campus ensembles, and in my free time I enjoy writing about movie scenes I find
+                    interesting.
+                </h3>
+                <a href="/about.html">Find out more about me</a>
+            </div>
+
+            <div class="section-1-image-wrapper">
+                <img src="https://via.placeholder.com/400x600.png?text=Image+Of+Me" alt="Image of me" class="img-of-me">
+            </div>
         </div>
-      </div>
 
 
+        <div class="section2" id="link3">
+            <div class="section-2-project-header">
+                <h1>My Projects</h1>
+            </div>
+            <a class="section-2-project-card" href="#link0">
 
-      <div class="section2" id="link3" >
-        <div class="section-2-project-header" >
-          <h1>My Projects</h1>
+                <img src="https://picsum.photos/250/250/?random" alt="">
+
+                <h1>Full Stack Facial Recognition</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi accusantium similique eligendi
+                    minima? Soluta possimus inventore voluptatibus eveniet sit vel laboriosam autem quisquam? Nisi
+                    eveniet aspernatur quos dignissimos. In labore officia perspiciatis aut accusamus maiores, odit
+                    iusto saepe recusandae.</p>
+
+            </a>
+            <a class="section-2-project-card" href="#link0">
+
+                <img src="https://picsum.photos/250/251/?random" alt="">
+
+                <h1>Full Stack RSS News Feed</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, voluptatibus deleniti vel
+                    doloremque, molestias quisquam suscipit officiis sit reiciendis laboriosam minima ipsum nesciunt
+                    quibusdam eos fuga, quo ducimus alias laudantium?</p>
+            </a>
+            <a class="section-2-project-card" href="#link0">
+
+                <img src="https://picsum.photos/250/252/?random" alt="">
+
+                <h1>This Website</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolore enim quibusdam facilis, ipsum,
+                    molestiae sit libero quaerat voluptate id sed alias fugiat? Ut repellendus minus quam quod quos nisi
+                    error odit eius eos, qui, quidem, odio minima perferendis magnam repudiandae eaque quo.</p>
+            </a>
+            <a class="section-2-project-card" href="#link0">
+
+                <img src="https://picsum.photos/250/253/?random" alt="">
+
+                <h1>Calculator with no Integer Limit using Java Swing</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta magnam optio iusto ut odio et
+                    repellendus expedita eum libero nostrum, quas cum iure voluptates quidem?</p>
+            </a>
+
         </div>
-      <a class="section-2-project-card" href="#link0">
-        
-        <img src="https://picsum.photos/250/250/?random" alt="">
-        
-        <h1>Full Stack Facial Recognition</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi accusantium similique eligendi minima? Soluta possimus inventore voluptatibus eveniet sit vel laboriosam autem quisquam? Nisi eveniet aspernatur quos dignissimos. In labore officia perspiciatis aut accusamus maiores, odit iusto saepe recusandae.</p>
-        
-      </a>  
-      <a class="section-2-project-card" href="#link0">
-        
-          <img src="https://picsum.photos/250/251/?random" alt="">
-          
-        <h1>Full Stack RSS News Feed</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, voluptatibus deleniti vel doloremque, molestias quisquam suscipit officiis sit reiciendis laboriosam minima ipsum nesciunt quibusdam eos fuga, quo ducimus alias laudantium?</p>
-      </a>
-      <a class="section-2-project-card" href="#link0">
-        
-          <img src="https://picsum.photos/250/252/?random" alt="">
-          
-        <h1>This Website</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolore enim quibusdam facilis, ipsum, molestiae sit libero quaerat voluptate id sed alias fugiat? Ut repellendus minus quam quod quos nisi error odit eius eos, qui, quidem, odio minima perferendis magnam repudiandae eaque quo.</p>
-      </a>
-      <a class="section-2-project-card" href="#link0">
-        
-          <img src="https://picsum.photos/250/253/?random" alt="">
-          
-        <h1>Calculator with no Integer Limit using Java Swing</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta magnam optio iusto ut odio et repellendus expedita eum libero nostrum, quas cum iure voluptates quidem?</p>
-      </a>
-      
-      </div>
-      <div class="section3" id="link4" href="#link0">
-        
-        <div class="about-me-wrapper">
-          <p>
-            Loremipsum dolor sit amet consectetur adipisicing elit. Quasi
-            nostrumaccusantium nesciunt! Quod, non? Ex illum
-            voluptatibus officia atque ipsum dolore vel adipisci non possimus
-            exercitationem natus, nam expedita aut earum facere voluptates
-            cupiditate ab. Sunt nostrum dicta praesentium autem saepe
-            consequuntur, sint nobis mollitia numquam sit recusandae. Beatae
-            eveniet voluptas tenetur ut enim reiciendis nobis, corporis deleniti
-            atque reprehenderit molestiae optio, corrupti ab, quis ullam
-            dolores! Incidunt dignissimos dicta esse voluptates modi rem nulla
-            similique provident sit ullam natus, ipsa obcaecati expedita et?
-          </p>
-        </div></div>
-      
+        <div class="section3" id="link4" href="#link0">
 
-        
-      </div></div>
+            <div class="section-3-contact-header head1">
+                <h1>Message Me</h1>
+            </div>
 
-      <footer class="mainFooter">
-        <p>
-          Will Altman &bullet; 2020 &bullet;
-          <a href="#" id="link">willaltman.tech</a>
-        </p>
-        <h6>Development build version 0.741</h6>
-      </footer>
-    </div>
-  </body>
-  <!-- Loader  -->
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/nav-anim.js"></script>
-  <script src="js/nav-anim-mobile.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/loader.js"></script>
-  
-  
+            
+
+            <form class="form-wrapper" action="https://formspree.io/xgendrwe" method="POST">
+                <label class="input-field">
+                    <h4>Name</h4>
+                    <input type="text" name="name" placeholder="Your name" required>
+                </label>
+                <label class="input-field">
+                    <h4>Email</h4>
+                    <input type="email" name="email" placeholder="Your email" required>
+                </label>
+                <label class="input-field">
+                    <h4>Subject</h4>
+                    <input type="text" name="subject" placeholder="Your subject" required>
+                </label>
+                <label class="input-field">
+                    <h4>Message</h4>
+                    <textarea name="message" placeholder="Your message" data-gramm_editor="false" required></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+
+            <div class="section-3-contact-header head2">
+                <h1>Find me Online</h1>
+            </div>
+
+            <div class="social-wrapper">
+                <a href="mailto:altman.120@osu.edu" class="a-email">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    Email
+                </a>
+                <a href="https://github.com/altmanw" class="a-github" target="_blank"><i class="fa fa-github"
+                        aria-hidden="true"></i>Github</a>
+                <a href="https://www.linkedin.com/in/will-altman-1982561b3/?trk=public-profile-join-page"
+                    class="a-linkedIn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                <a href="https://osu.joinhandshake.com/users/19875454" class="a-handshake" target="_blank"><i
+                        class="fa fa-handshake-o" aria-hidden="true"></i>Handshake</a>
+                <a href="#" class="a-instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram</a>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <footer class="mainFooter">
+            <p>
+                Will Altman &bullet; 2020 &bullet;
+                <a href="#" id="link">willaltman.tech</a>
+            </p>
+            <h6>Development build version 0.80</h6>
+        </footer>
+
+        <!-- Loader  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/492a9b9e26.js"></script>
+        <script src="js/nav-anim.js"></script>
+        <script src="js/nav-anim-mobile.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/loader.js"></script>
+</body>
+</body>
+
 </html>

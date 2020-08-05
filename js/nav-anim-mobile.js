@@ -2,7 +2,6 @@
 
 var selector = "#nav-animation-mobile";
 
-
 //Detect where we are in the current scroll window, and update hover effects and higlight position class
 $(window)
   .scroll(function () {
@@ -10,7 +9,7 @@ $(window)
     var sec2 = $(".section1").offset().top - 200;
     console.log(sec2);
     var sec3 = $(".section2").offset().top - 125;
-    var sec4 = $(".section3").offset().top - 100;
+    var sec4 = $(".section3").offset().top - 175;
 
     if (windscroll >= 0) {
       $(selector).addClass("start-home");
