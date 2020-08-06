@@ -7,7 +7,6 @@ $(window)
   .scroll(function () {
     var windscroll = $(window).scrollTop();
     var sec2 = $(".section1").offset().top - 200;
-    console.log(sec2);
     var sec3 = $(".section2").offset().top - 125;
     var sec4 = $(".section3").offset().top - 250;
 

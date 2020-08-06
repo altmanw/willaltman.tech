@@ -10,14 +10,17 @@ var navbar = document.getElementById("navbar");
 var navbarMobile = document.getElementById("navbarMobile");
 var sticky = navbar.offsetTop - 40;
 var stickyMobile = navbarMobile.offsetTop;
+console.log(sticky, stickyMobile);
 
 // Update where the navbar sticky threshold is whenever the window is resized, so media queries don't mess everything up
 $(window).resize(function () {
   navbar.classList.remove("sticky");
+  navbarMobile.classList.remove("sticky");
   sticky = navbar.offsetTop - 40;
   stickyMobile = navbarMobile.offsetTop;
   stick();
   stickMobile();
+  console.log("Resized ",sticky, stickyMobile);
 });
 
 function stick() {
