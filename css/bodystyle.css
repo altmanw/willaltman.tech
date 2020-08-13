@@ -107,29 +107,13 @@ strong {
   font-weight: 300;
 }
 
-.section1 a {
-  font-size: 20px;
-  margin-top: 50px;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: lowercase;
-  color: #ce0f3d;
-  transition: all ease-out 0.3s;
-
-  border-bottom: 1px solid transparent;
-}
-
-.section1 a:hover {
-  transition: all linear 0.3s;
-  border-bottom: 1px solid #ce0f3d;
-}
 
 .tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted gray;
   margin: 0;
-  cursor: default;
+  cursor: pointer;
 }
 
 /* Tooltip text */
@@ -160,6 +144,10 @@ strong {
     width: 150px;
     margin-left: -75px;
   }
+}
+
+.tbdbitl {
+  color: black;
 }
 
 /* ----- SECTION 2 ----- */
@@ -449,11 +437,11 @@ strong {
   padding-right: 50px;
 }
 
-.a-email, .a-github, .a-linkedIn, .a-handshake, .a-instagram {
+.a-email, .a-github, .a-linkedIn, .a-handshake, .a-spotify {
   background: linear-gradient(to right, #ce0f3d, rgb(226, 114, 40));
 }
 
-.a-email:hover, .a-github:hover, .a-linkedIn:hover, .a-handshake:hover, .a-instagram:hover {
+.a-email:hover, .a-github:hover, .a-linkedIn:hover, .a-handshake:hover, .a-spotify:hover {
   
   background: linear-gradient(to left, #ce0f3d, red);
   transform: translateY(1px);
@@ -461,11 +449,6 @@ strong {
   
 
 }
-
-.a-instagram {
-  margin-bottom: 50px;
-}
-
 
 
 
