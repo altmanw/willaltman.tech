@@ -19,8 +19,6 @@ html {
   justify-content: center;
 }
 
-
-
 .section1 {
   background-color: white;
   display: grid;
@@ -30,6 +28,12 @@ html {
   margin: 35px 0px;
   /* grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr; */
+}
+
+.section-1-image-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 10px;
 }
 
 .section-1-image-wrapper img {
@@ -176,6 +180,7 @@ strong {
   justify-self: center;
   padding: 30px 20px 50px 20px;
   margin-top: 30px;
+  text-align: center;
 }
 
 .section-2-project-header h1 {
@@ -203,6 +208,7 @@ strong {
   transform: translateY(-10px);
 
   transition: all 0.25s ease-in-out;
+  cursor: default;
 }
 
 .section-2-project-card img {
@@ -437,7 +443,7 @@ strong {
   padding-right: 50px;
 }
 
-.a-email, .a-github, .a-linkedIn, .a-handshake, .a-spotify {
+.a-email, .a-github, .a-linkedIn, .a-handshake, .a-resume {
   background: linear-gradient(to right, #ce0f3d, rgb(226, 114, 40));
 }
 
