@@ -31,9 +31,12 @@ html {
 }
 
 .section-1-image-wrapper {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  
   padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .section-1-image-wrapper img {
@@ -59,9 +62,14 @@ html {
     height: 600px;
   }
 
+  .section-1-image-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .section1-text-wrapper {
     padding-left: 20px;
-  padding-right: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -70,6 +78,7 @@ html {
     grid-template-columns: 3fr 1fr;
     margin: 50px 15px 0px 15px;
   }
+
 }
 
 @media only screen and (min-width: 1250px) {
@@ -84,12 +93,11 @@ html {
     grid-template-columns: 3fr 1fr;
     width: 1500px;
   }
+
+
 }
 
-.section-1-image-wrapper {
-  display: flex;
-  justify-content: center;
-}
+
 
 .section1 h1 {
   color: #ce0f3d;
@@ -447,7 +455,7 @@ strong {
   background: linear-gradient(to right, #ce0f3d, rgb(226, 114, 40));
 }
 
-.a-email:hover, .a-github:hover, .a-linkedIn:hover, .a-handshake:hover, .a-spotify:hover {
+.a-email:hover, .a-github:hover, .a-linkedIn:hover, .a-handshake:hover, .a-resume:hover {
   
   background: linear-gradient(to left, #ce0f3d, red);
   transform: translateY(1px);
