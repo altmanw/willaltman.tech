@@ -32,7 +32,6 @@ html {
 
 .section-1-image-wrapper {
   
-  padding-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +42,7 @@ html {
   border-radius: 16px;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 .section1-text-wrapper {
   display: flex;
@@ -59,7 +59,8 @@ html {
   }
   .section-1-image-wrapper img {
     width: 400px;
-    height: 600px;
+    height: auto;
+    object-fit: cover;
   }
 
   .section-1-image-wrapper {
@@ -171,7 +172,7 @@ strong {
   gap: 20px;
   grid-template-columns: 250px;
   grid-template-rows: auto 700px 700px 700px 700px;
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
 }
 
 .section2 a {
@@ -186,7 +187,7 @@ strong {
   grid-column-end: 2;
   align-self: center;
   justify-self: center;
-  padding: 30px 20px 50px 20px;
+  padding: 0px 20px 20px 20px;
   margin-top: 30px;
   text-align: center;
 }
@@ -205,6 +206,7 @@ strong {
   display: grid;
   grid-template-rows: 258px 100px;
   backface-visibility: hidden;
+  cursor: pointer !important;
 
   transition: all 0.25s ease-in-out;
 }
@@ -276,6 +278,10 @@ strong {
   gap:20px;
   margin: 30px 10px;
 
+}
+
+.section3-wrapper {
+  padding-top: 50px;
 }
 
 .head2 {

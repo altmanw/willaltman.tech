@@ -1,0 +1,41 @@
+body { font-family: "Montserrat", Arial, "Lato", sans-serif;
+       scroll-behavior: smooth;
+       overflow-x: hidden; 
+}
+
+.container {
+       display: flex;
+       margin: 0% 15%;
+       padding: 0% 5%;
+       line-height: 90px;
+       background-color: black;
+       border-radius: 20px;
+       text-align: center;
+
+}
+
+span {
+       vertical-align: middle;
+       font-weight: 600;
+       align-items: center;
+       cursor: grab;
+     }
+
+span:hover {
+       color:blue !important;
+
+
+}
+
+
+.f11 { font-size: 20px; }
+.f12 { font-size: 26px; }
+.f13 { font-size: 38px; }
+.f14 { font-size: 47px; }
+.f15 { font-size: 59px; }
+.f16 { font-size: 74px; }
+.f17 { font-size: 93px; }
+.f18 { font-size: 118px; }
+
+
+
