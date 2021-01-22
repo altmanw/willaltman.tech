@@ -22,7 +22,7 @@ body { font-family: "Montserrat", Arial, "Lato", sans-serif;
     background-color: white;
     border-radius: 32px;
     text-align: center;
-    font-size: 0.75em;
+    font-size: 1em;
 
 }
 
@@ -92,7 +92,7 @@ body { font-family: "Montserrat", Arial, "Lato", sans-serif;
     grid-row-start: 2;
     grid-row-end: 3;
     height: 130px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 
   }
